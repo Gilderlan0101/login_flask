@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Impede a rolagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0370ff;
+    position: relative;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste para cobrir toda a tela */
+    z-index: -1;
+}
+
+.login {
+    width: 300px; /* Ajuste conforme necessário */
+    height: auto; /* Ajuste conforme necessário */
+    text-align: center;
+    background-color: rgb(17, 15, 19);
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    right: 25px;
+    
+}
+
+#email, #senha, #nome {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+#Enviar {
+    width: 50%;
+    padding: 10px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Enviar:hover {
+    background-color: #004040;
+}
+
+.foto {
+    margin-right: 90px;
+    padding-right: 10%;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .login {
+        width: 90%;
+        right: 5%;
+    }
+
+    #email, #senha {
+        width: 90%;
+    }
+
+    #Enviar {
+        width: 90%;
+    }
+}
